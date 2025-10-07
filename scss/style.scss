@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'main1';
+@import 'footer';
+@import 'responsive';
+
+// Base
+body, html {
+  font-family: $font-family;
+  background-color: $bg-color;
+  color: $text-color;
+}

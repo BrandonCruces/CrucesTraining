@@ -1,0 +1,30 @@
+header {
+  @include flex-center(column);
+  padding: 20px 0;
+  background-color: $footer-bg;
+
+  .logo {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    list-style: none;
+    @include flex-center(row, flex-start, center);
+    gap: 20px;
+
+    li a {
+      text-decoration: none;
+      background-color: $primary-color;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+      @include transition();
+
+      &:hover {
+        background-color: $primary-hover;
+      }
+    }
+  }
+}
