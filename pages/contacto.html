@@ -3,36 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cruces Training - Entrenador Personal | Fuerza y Funcional</title>
-    <meta name="description" content="Brandon Cruces - Entrenador personal especializado en entrenamiento funcional y de fuerza. Planes personalizados para transformar tu cuerpo y alcanzar tus objetivos">
-    <meta name="keywords" content="entrenador personal, cross training, fuerza, funcional, gimnasio, personal trainer, ejercicio, fitness, entrenamiento">
+    <title>Cruces Training - Contacto | Consultas y Planes Personalizados</title>
+    <meta name="description" content="Contacta a Brandon Cruces para consultas sobre entrenamiento personalizado, planes de fuerza y funcional. Transforma tu físico con un entrenador certificado">
+    <meta name="keywords" content="contacto entrenador personal, consultas entrenamiento, planes personalizados, precio entrenador, Brandon Cruces contacto">
     <meta name="author" content="Brandon Cruces">
     
 
-    <meta property="og:title" content="Cruces Training - Tu entrenador personal">
-    <meta property="og:description" content="Entrenamientos personalizados para alcanzar tu mejor versión con Brandon Cruces">
+    <meta property="og:title" content="Cruces Training - Contacto y Consultas">
+    <meta property="og:description" content="Consulta sobre entrenamientos personalizados con Brandon Cruces">
     <meta property="og:type" content="website">
     
 
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="../images/site.webmanifest">
     
-   
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
 
 <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="../index.html">
                 <img src="https://cdn.dribbble.com/userupload/19793495/file/original-a14f9630034aba3f1efa691dc1d80491.jpg" 
                      alt="Logo Cruces Training - Entrenador personal Brandon Cruces" 
                      class="logo" style="width: 120px;">
@@ -44,19 +43,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html" aria-current="page">INICIO</a>
+                        <a class="nav-link" href="../index.html">INICIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/sobremi.html">SOBRE MI</a>
+                        <a class="nav-link" href="sobremi.html">SOBRE MI</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/servicios.html">SERVICIOS</a>
+                        <a class="nav-link" href="servicios.html">SERVICIOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/galeria.html">GALERÍA</a>
+                        <a class="nav-link" href="galeria.html">GALERÍA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+                        <a class="nav-link active" href="contacto.html" aria-current="page">CONTACTO</a>
                     </li>
                 </ul>
             </div>
@@ -65,23 +64,21 @@
 </header>
 
 <main id="main-content">
-<section class="central">
-    <div class="imagen animated">  
-        <img src="https://www.trainingforgold.es/images/easyblog_articles/100/entrenamiento-personas-mayores.jpg" 
-             alt="Brandon Cruces realizando entrenamiento funcional con cliente" 
-             width="400" height="300" loading="lazy" class="img-fluid">
-    </div>
-    <div class="texto animated delay-1">  
-        <h1>VENÍ Y ENTRENA CONMIGO</h1>
-        <p>
-            Tu entrenador de confianza, te ayudo a tu mejor versión...
-        </p>
-    </div>
-</section>
+    <section class="contacto">
+        <h1>Contacto</h1>
+        <p>Para consultas y planes personalizados, completá el formulario y me contactaré contigo.</p>
+        <form action="https://formspree.io/f/your-email" method="POST" class="form-contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required aria-required="true">
 
-    <section class="motivacion">
-        <h2>CAMINO A TU MEJOR VERSIÓN</h2>
-        <p>Entrenamiento personalizado, seguimiento continuo y motivación constante.</p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required aria-required="true"></textarea>
+
+            <button type="submit" class="btn-animated">Enviar</button>
+        </form>
     </section>
 </main>
 
@@ -102,6 +99,7 @@
     </div>
     <p>&copy; 2025 Cross Training. Todos los derechos reservados.</p>
 </footer>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

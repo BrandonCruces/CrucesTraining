@@ -135,3 +135,35 @@
     }
   }
 }
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: $primary-color;
+    color: white;
+    padding: 12px 16px;
+    z-index: 1000;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    @include transition();
+
+    &:focus {
+        top: 6px;
+        outline: 2px solid #fff;
+        outline-offset: 2px;
+    }
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
