@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+  .central, .contenido-sobre, .tarjetas-servicios {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .central .texto, .texto-sobre {
+    max-width: 90%;
+  }
+}

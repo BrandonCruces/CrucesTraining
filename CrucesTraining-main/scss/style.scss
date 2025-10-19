@@ -1,0 +1,74 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'header';
+@use 'main1';
+@use 'footer';
+@use 'responsive';
+
+body, html {
+  font-family: $font-family;
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.animated {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.delay-1 { 
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.2s forwards; 
+}
+
+.delay-2 { 
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.4s forwards; 
+}
+
+.delay-3 { 
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.6s forwards; 
+}
+
+
+.pulse-hover {
+    transition: all 0.3s ease;
+    
+    &:hover {
+        animation: pulse 0.5s ease-in-out;
+    }
+}
+
+.tarjeta {
+    transition: all 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-10px) scale(1.02);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+}
